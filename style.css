@@ -1,0 +1,475 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); 
+body
+{
+  overflow-x: hidden;
+  padding: 0;
+  margin: auto;
+}
+a
+{
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+}
+img
+{
+    vertical-align: bottom;
+}
+
+h2
+{
+    font-weight:100;
+    font-size: 30px;
+    color: rgb(55, 53, 53);
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Top bar Starts*/
+.top-bar
+{
+   display: flex;
+    height: 80px;
+    left:0;
+    right: 0;
+    top:0;
+ 
+}
+.topbar-items
+{
+    display: flex;
+    flex:1 1 100%;
+    padding: 0;
+    justify-content: space-between; 
+  
+}
+.topbar-items li
+{
+    padding: 15px 3px;
+}
+.topbar-items a
+{
+    display: inline-block;
+    font-size:30px;
+    font-weight:100;
+    color: rgb(55, 53, 53);
+    font-family: 'Roboto', sans-serif;
+}
+.topbar-items .material-symbols-outlined
+{
+    font-size:36px;
+}
+.topbar-items span:hover
+{
+  background-color: grey;
+  
+}
+
+/*Top bar ends */
+
+/*Side-navigation starts*/
+.menu-items
+{
+    display: none;
+    position: fixed;
+    height: 100vh;
+    max-width: 100%;
+    top:0;
+    left: 0;
+    z-index:90;
+    background-color: white;
+    border-right: 0.2px solid grey;
+}
+.menu-items li
+{
+    padding:25px;
+}
+.menu-items li a
+{
+    color: rgb(55, 53, 53);
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    padding:8px;
+     
+}
+
+.menu-items li:not(:first-child):hover
+{
+  background-color: grey;
+}
+
+#loans,#finance,#debt
+{
+  display: none;
+  color: rgb(55, 53, 53);
+  padding:25px;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+/*Side Navigation ends*/
+
+
+hr
+{
+    color: #ddd;
+}
+.about h2
+{
+    margin-top:50px;
+    text-align: center;
+    font-size: 30px;
+   
+}
+.about h3
+{
+    font-size:18px;
+    font-weight:600;
+    margin-top: 34px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.about h3 + p
+{
+    font-style: italic;
+    text-align: center;
+}
+
+.about h3 + p + p
+{
+   text-align:center;
+   margin:12px 8px 50px 8px;
+   line-height:1.5rem;
+ 
+}
+
+
+.coin-image
+{
+    height:300px;
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 50%;
+}
+
+.show-style
+{
+    display: block;
+}
+
+
+.insurance-categories ul
+{
+   display:flex;
+   margin-top:20px;
+   flex-flow: row wrap;
+   padding: 0;
+   
+}
+
+.insurance-categories
+{
+  margin-top: 20px;
+}
+.insurance-categories a
+{
+    display: inline-block;
+    background-color: rgb(55, 53, 53);
+    color: #ddd;
+    margin: 10px 3px;
+    padding: 3px 4px;
+}
+
+.insurance-categories .active-link
+{
+  background-color:black;
+  padding:4px;
+ 
+}
+/*Main content starts*/
+.insurance-list ul
+  {
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    border:0;
+    height: 100%;
+    padding: 0;  
+    margin: 15px 30px 15px 35px;
+    text-align: center;    
+    overflow: hidden;
+  }
+
+.insurance-list ul li 
+  {
+   
+    flex-basis:calc(22% - 15px);
+    margin:24px;
+    width:20%;
+  
+  }
+  .insurance-detail
+  {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: left;
+  }
+  .insurance-info img
+  {
+    height:320px;
+    width:265px;
+   
+  }
+
+  .insurance-name
+  {
+    color: rgb(55, 53, 53);
+    font-size: 20px;
+    text-align: center;
+    padding:10px 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  .insurance-name:hover
+  {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .insurance-description
+  {
+    color: rgb(55, 53, 53);
+    font-size:15px;
+    text-align: center;
+    padding:10px 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  .pagination 
+  {
+    display:flex;
+    justify-content: center;
+    margin:30px 0 40px 0;
+  }
+  #active-pagination
+  {
+    color: #ddd;
+    background-color:rgb(55, 53, 53); 
+  }
+  .pagination a
+  {
+    color: rgb(55, 53, 53);
+    padding: 8px 16px;
+    margin-bottom: 30px;
+
+  }
+  /*Main content ends*/
+
+  .article, .blogs, .footer-content
+  {
+    margin-top: 20px;
+   
+  }
+  .article img
+  {
+    width:70px;
+    height: 50px;
+    vertical-align: middle;
+   
+  }
+  .article p
+  {
+    padding-left:0;
+  }
+  .article span a
+  {
+    color: rgb(55, 53, 53);
+  }
+  .article span a:hover
+  {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  footer
+  {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%; 
+    margin-top: 50px;
+  }
+  
+  footer p
+  { 
+      
+      color: rgb(55, 53, 53);
+      padding:12px;
+      font-size: 15px;
+      font-family: 'Roboto', sans-serif;
+     
+  }
+
+
+  @media screen and (min-width:990px) and (max-width:1190px)
+  {
+ 
+    .insurance-list ul li 
+     {
+   
+       flex-basis:calc(21% - 12px);
+       width:10%;
+   
+     }
+
+     .insurance-info img
+    {
+       height:320px;
+       width:100%;
+       margin-top: 25px;
+   
+     }
+   
+  }
+
+
+  @media screen and (min-width:750px) and (max-width:989px)
+  {
+
+    h2
+    {
+      font-size:17px ;
+     
+    }
+   .insurance-list ul li 
+   {
+   
+    flex-basis:calc(28% - 12px);
+    width:10%;
+    
+   }
+
+   .insurance-info img
+  {
+    height:320px;
+    width:100%;
+    margin-top: 25px;
+   
+   }
+   
+  }
+
+  @media screen and (min-width:200px) and (max-width:749px)
+  {
+ 
+  .insurance-list ul li 
+  {
+   
+    flex-basis:calc(45% - 10px);
+   
+  }
+
+   
+}
+
+ 
+  @media screen and (min-width:570px) and (max-width:750px)
+  {
+  
+  .insurance-list ul li 
+  {
+
+    flex-basis:38%;
+    width:10%;
+    
+  }
+  .insurance-info img
+  {
+     height:320px;
+     width:100%;
+     margin-top: 25px;
+ 
+   }
+}
+  
+
+
+  @media screen and (min-width:150px) and (max-width:550px) 
+  {
+  
+    h2
+    {
+      font-size: 18px;
+    }
+    .topbar-items a
+    {
+        font-size:18px;     
+    }
+    .topbar-items .material-symbols-outlined
+    {
+       font-size:18px;
+    }
+    .menu-items li a
+   {
+    
+    font-size:18px;
+    padding: 0;
+   
+   }
+   
+   #loans,#finance,#debt
+   {
+  
+    font-size:18px;
+    padding:25px;
+   
+   }
+    .coin-image
+    {
+    height:150px;
+    }
+
+    .pagination a
+    {
+      padding: 8px;   
+      font-size:12px;
+    }
+
+    footer
+    {
+      grid-template-columns:100%;
+      justify-items:left;
+    }
+    .insurance-list ul li 
+    {
+   
+     flex-basis:100%;
+     width:100%;
+     }
+     .insurance-info img
+     {
+       height:570px;
+       width:100%;
+     }
+     .insurance-name
+     {
+      
+       font-size: 15px;
+      
+     }
+     .insurance-description
+     {
+      
+       font-size:12px;
+      
+     }
+  
+
+  }
+
+  
